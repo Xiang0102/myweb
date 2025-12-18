@@ -2,40 +2,24 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <title>個人收藏網頁</title>
+    <title>莊喻翔的個人網站</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="collect-page">
-
-    <h2>我的收藏展示</h2>
-    
-    <div class="collect-container">
-        <img id="item-pic" src="未命名.jpg" class="collect-img" alt="收藏品">
+<body>
+    <div style="text-align: center; margin-bottom: 20px;">
+        <a href="collect.html" class="btn-link">進入個人收藏網頁</a>
     </div>
 
-    <div style="margin-top: 20px;">
-        <button onclick="prev()" class="btn-link">上一項收藏</button>
-        <button onclick="next()" class="btn-link">下一項收藏</button>
+    <div class="info-item">學號：91218102</div>
+    <div class="info-item">姓名：莊喻翔</div>
+    <div class="image-container">
+        <img src="未命名.jpg" alt="個人相片" class="main-profile-pic">
     </div>
 
-    <br>
-    <a href="index.html" class="btn-link">回個人主頁</a>
-
-    <script>
-        // 假設你有三張圖：未命名.jpg, item2.jpg, item3.jpg
-        const items = ["未命名.jpg", "未命名.jpg", "未命名.jpg"]; 
-        let currentIndex = 0;
-        const imgElement = document.getElementById("item-pic");
-
-        function next() {
-            currentIndex = (currentIndex + 1) % items.length;
-            imgElement.src = items[currentIndex];
-        }
-
-        function prev() {
-            currentIndex = (currentIndex - 1 + items.length) % items.length;
-            imgElement.src = items[currentIndex];
-        }
-    </script>
+    <div class="footer">
+        <a href="https://chien-yuan-liu.github.io/VibeWealth/" class="btn-link">
+            響應式網站設計：理財WebAPP
+        </a>
+    </div>
 </body>
 </html>
