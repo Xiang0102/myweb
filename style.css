@@ -1,41 +1,28 @@
-body {
-    background-color: #FFFFE0;
-    margin: 0;
-    padding: 40px 0;
+/* --- 題目 4: 個人收藏網頁樣式 --- */
+
+/* 4.1 個人收藏網頁整頁背景設為粉紅色 */
+.collect-page {
+    background-color: pink;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 50px;
     font-family: "Microsoft JhengHei", sans-serif;
 }
-.info-item {
-    color: #4B2C20;
-    background-color: #D2B48C;
-    border: 2px solid #4B2C20;
-    border-radius: 6px;
-    padding: 12px 25px;
-    margin: 10px auto;
-    width: fit-content;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-.image-container img {
-    width: 400px;
-    height: 300px;
-    border: 3px solid green;
-    border-radius: 10px;
+
+/* 4.2 圖片初始高寬、藍色框線 */
+.collect-img {
+    width: 400px;           /* 寬 400px */
+    height: 300px;          /* 高 300px */
+    border: 2px solid blue; /* 2px 粗藍色框線 */
     object-fit: cover;
-    margin: 20px 0;
+    
+    /* 4.3 動態漸變設定 (1秒) */
+    transition: width 1s, height 1s; 
 }
-.btn-link {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #5D4037;
-    color: white;
-    text-decoration: none;
-    border-radius: 50px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-.btn-link:hover {
-    background-color: #3E2723;
+
+/* 4.3 滑鼠移到圖片上方時，高寬漸變為 400px, 500px */
+.collect-img:hover {
+    width: 500px;           /* 寬變為 500px */
+    height: 400px;          /* 高變為 400px */
 }
